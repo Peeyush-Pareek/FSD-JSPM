@@ -1,0 +1,4 @@
+/* mystyle.css - a sample style sheet */
+h2    {color: blue; text-align: left;}
+p     {line-height: 150%;}
+#foo { font-family: Arial;color: yellowgreen;}
