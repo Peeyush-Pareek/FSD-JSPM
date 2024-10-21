@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+<p id="Vehicle"></p>
+  
+<script>
+const vehicleFirst = {
+  brand: 'TVS',
+  model: 'PEP',
+  type: 'Scooty',
+  year: 2018, 
+  color: 'blue',
+  registration: {
+    city: 'Pune',
+    state: 'Maharastra',
+    country: 'India'
+  }
+}
+
+myVehicle(vehicleFirst)
+
+function myVehicle({ model, registration: { state } }) {
+  const message = 'My ' + model + ' is registered in ' + state + '.';
+
+  document.getElementById("Vehicle").innerHTML = message;
+}
+</script>
+
+</body>
+</html>

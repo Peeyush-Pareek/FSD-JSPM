@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<p id="Vehicle"></p>
+  
+<script>
+const vehicleOne = {
+  brand: 'Maruti',
+  model: 'Wagonr',
+  type: 'car',
+  year: 2024, 
+  color: 'red'                                                                                                                                                            
+}
+
+myVehicle(vehicleOne);
+
+function myVehicle({type, color, brand, model}) {
+  const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';
+
+  document.getElementById("Vehicle").innerHTML = message;
+}
+</script>
+
+</body>
+</html>
